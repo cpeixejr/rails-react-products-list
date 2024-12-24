@@ -1,0 +1,61 @@
+.product-card {
+  background: #2d3748;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  margin: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.product-name {
+  color: #e2e8f0;
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+}
+
+.product-prices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.price-label {
+  color: #a0aec0;
+  font-size: 0.875rem;
+}
+
+.price-value {
+  font-weight: 600;
+  color: #63b3ed;
+}
+
+.product-expiration {
+  border-top: 1px solid #4a5568;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expiration-label {
+  color: #a0aec0;
+  font-size: 0.875rem;
+}
+
+.expiration-value {
+  color: #63b3ed;
+  font-weight: 500;
+}
